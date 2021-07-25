@@ -1,0 +1,26 @@
+{
+    "name": "roma-mb/php-collections",
+    "description": "Php collections",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "roma-melo",
+            "email": "romario.melo.barreiras@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "scripts": {
+        "cs": "phpcs -p src/ --standard=PSR12 --extensions=php",
+        "cs-fix": "phpcbf -p -s src/ --standard=PSR12 --extensions=php"
+    }
+}
